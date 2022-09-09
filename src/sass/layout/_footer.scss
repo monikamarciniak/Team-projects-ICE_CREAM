@@ -1,0 +1,150 @@
+// Domyślnie jest robione pod telefon
+
+.footer {
+    background-color: var(--background-about);
+    min-width: 100%;
+}
+
+.footer__title {
+    margin-left: 0px;
+    margin-bottom: 43px;
+}
+
+.footer__title--first {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--brand-second);
+    width: 232px;
+}
+
+.footer__title--second {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-one);
+    margin-top: 17px;
+    width: 200px;
+}
+
+.footer__contact {
+    display: flex;
+    justify-content: flex-end;
+    margin: 46px 20px 43px 0px;
+}
+
+.footer__contact--caption {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+    /* or 22px */
+    text-align: right;
+    color: #000000;
+}
+
+.footer__contact--link {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 186%;
+
+/* or 22px */
+    text-align: right;
+    color: var(--brand-one);
+}
+
+.footer__copyrights{
+    border-top: 1px solid #E1E1E1;
+}
+
+.footer__copyrights--text {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
+    /* or 21px */
+    text-align: center;
+    color: #907E82;
+    // border-top: 1px solid #E1E1E1;
+    width: 150px;
+}
+
+// Kod od sociali w oddzielnym pliku scss
+// style do tableta
+@media screen and (min-width: 768px){
+    .footer__tablet-pc {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer__copyrights--text {
+        width: 100%;
+    }
+
+    .footer__title--first {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        width: 340px;
+    }
+
+    .footer__title--second {
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.06em;
+        width: 340px;
+    }
+
+    .footer__contact--caption,
+    .footer__contact--link {
+        font-size: 14px;
+    }
+
+    .footer__copyrights--text {
+        line-height: 186%;
+        letter-spacing: 0.02em;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .footer__tablet-pc {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__title--first {
+        font-size: 30px;
+        line-height: 34px;
+        width: 100%;
+    }
+
+    .footer__title--second {
+        font-size: 58px;
+        line-height: 66px;
+        width: 100%;
+    }
+
+    .footer__contact--caption,
+    .footer__contact--link {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+
+    .footer__copyrights--text {
+        padding: 10px 0px;
+    }
+}

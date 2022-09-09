@@ -1,0 +1,121 @@
+.customer_reviews {
+    margin-top: 80px;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__avatar {
+        margin-bottom: 29px;
+    }
+
+    &__review-text {
+        width: 280px;
+        padding: 43px 61px 26px 62px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 2.55;
+        text-align: center;
+        background-color: var(--background-clients);
+        z-index: 2;
+
+
+        &::before {
+            content: "";
+            display: flex;
+            background-image: url("/images/customer_reviews/quotemark.svg");
+            background-repeat: no-repeat;
+            width: 54px;
+            height: 40px;
+            position: absolute;
+            margin: -15px 0;
+            z-index: -1;
+        }
+
+    }
+
+    &__client-name {
+        font-size: 14px;
+        line-height: 1.85;
+
+        &::before {
+            content: "";
+            display: flex;
+            justify-content: center;
+            background-image: url("/images/customer_reviews/dots-divider.svg");
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 4px;
+            margin: 30px auto 18px;
+        }
+
+    }
+
+    & p {
+        background-image: repeating-linear-gradient(to bottom, transparent, transparent 30px, var(--underline-color), var(--underline-color) 31px);
+        background-size: 70% 80%;
+        background-repeat: no-repeat;
+        background-position: 50% 65%;
+    }
+
+    &__slider-pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .customer_reviews {
+
+        &__review-text {
+            width: 620px;
+            padding: 47px 80px 34px 80px;
+            font-size: 14px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+
+            &::before {
+                margin: -17px -40px;
+            }
+        }
+
+        & p {
+            background-size: 81% 61%;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .customer_reviews {
+
+        &__review-text {
+            width: 926px;
+            padding: 47px 80px 34px 80px;
+            font-size: 16px;
+            line-height: 2.16;
+            letter-spacing: 0.04em;
+
+            &::before {
+                margin: -10px -30px;
+            }
+        }
+
+        & p {
+            background-size: 87% 50%;
+        }
+    }
+}

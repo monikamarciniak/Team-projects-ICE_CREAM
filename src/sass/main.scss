@@ -1,0 +1,29 @@
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+/*
+ * Główny plik dla stylów.
+ * Wszystkie partials podłączamy tutaj.
+ */
+
+ @import './utils/visually-hidden';
+ @import './utils/variables';
+ 
+ @import './base/common';
+ @import './base/container';
+ @import './base/section';
+ 
+ @import './layout/header';
+ @import './layout/products';
+ @import './layout/about';
+ @import './layout/gallery';
+ @import './layout/customer_reviews';
+ @import './layout/contacts';
+ @import './layout/footer';
+ 
+ @import './layout/modal';
+ 
+ @import './components/social-links';
+ @import './components/slider-controls';

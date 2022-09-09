@@ -1,0 +1,9 @@
+.slider-controls {
+    width: 13px;
+    height: 13px;
+
+    &:not(:last-child) {
+        margin-right: 18px;
+    }
+
+}

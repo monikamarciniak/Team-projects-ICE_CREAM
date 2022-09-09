@@ -1,0 +1,331 @@
+.about {
+    background-color: var(--background-about);
+    padding-top: 125px;
+    font-family: var(--font-main);
+    padding-bottom: 97px;
+}
+
+.about__header {
+    margin: 0 auto 26px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+    height: 112px;
+}
+
+.about__title {
+    max-width: calc(100% - 100px);
+    margin: 0;
+    font-family: var(--font-header);
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-one);
+    text-align: center;
+}
+
+.about__title-label {
+    margin: 0;
+    font-family: var(--font-header);
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--brand-second);
+}
+
+.about__picture {
+    width: 280px;
+    height: 279px;
+    text-align: center;
+    margin-left: calc(50% - 150px);
+    margin-bottom: 46px;
+}
+
+.about__div-description {
+    margin: 0 auto;
+    max-width: 220px;
+}
+
+.about__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+    margin-top: 0;
+}
+
+.about__description--margin {
+    margin-bottom: 47px;
+}
+
+.about__description--color {
+    color: var(--text-second);
+}
+
+.about__span {
+    margin-bottom: 15px;
+}
+
+.about__button {
+    margin: 17px auto;
+    width: 176px;
+    height: 44px;
+    border: none;
+    background-color: var(--basic-color);
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-one);
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--hover-color);
+    }
+}
+
+.about__button-icon {
+    margin-left: 14px;
+    width: 7px;
+    height: 14px;
+}
+
+.about__list {
+    list-style: none;
+    padding: 0;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.about__value {
+    font-family: var(--font-header);
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    color: var(--brand-one);
+    margin: 0;
+}
+
+.about__value-description {
+    margin: 16px 0 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    max-width: 230px;
+}
+
+.about__icon {
+    margin: 39px 0 16px;
+}
+
+@media screen and (min-width: 405px) {
+
+    .about__header {
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 767.999px) {
+    
+    .about__description-background-mobile {
+        background-image: url('/images/about-background-320.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+        .about__description-background-mobile {
+            background-image: url('/images/about-background-320@2x.png');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .about {
+        padding-bottom: 140px;
+    }
+
+    .about__header {
+        margin: 0 auto;
+        height: 101px;
+    }
+
+    .about__title {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .about__title-label {
+        font-size: 26px;
+        list-style: 30px;
+    }
+
+    .about__main-div {
+        display: flex;
+        margin: 0 auto;
+        width: 697px;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .about__picture {
+        width: 340px;
+        height: 339px;
+        margin: 0;
+    }
+
+    .about__div-description {
+        margin-top: 50px;
+        max-width: 340px;
+    }
+
+    .about__description {
+        font-size: 14px;
+        line-height: 176%;
+    }
+
+    .about__description--margin {
+        margin-bottom: 30px;
+    }
+
+    .about__button {
+        margin: 60px 0 66px;
+    }
+
+    .about__list {
+        display: flex;
+        justify-content: space-between;
+        width: 660px;
+        margin-left: calc(50% - 364px);
+    }
+
+    .about__list-item {
+        width: 180px;
+    }
+
+    .about__icon {
+        margin-bottom: 36px;
+    }
+
+    .about__value {
+        font-size: 48px;
+        line-height: 55px;
+    }
+
+    .about__value-description {
+        font-size: 14px;
+        line-height: 174%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .about__header {
+        height: 115px;
+    }
+
+    .about__title {
+        font-size: 58px;
+        line-height: 66px;
+    }
+
+    .about__title-label {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .about__main-div {
+        margin-top: 55px;
+        width: 1013px;
+    }
+
+    .about__description-background-desktop {
+        background-image: url('/images/about-background-1280.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .about__picture {
+        width: 516px;
+        height: 516px;
+        margin-bottom: 39px;
+    }
+
+    .about__div-description {
+        max-width: 463px;
+    }
+
+    .about__description--size {
+        font-size: 16px;
+    }
+
+    .about__description--margin,
+    .about__description--margin-desktop{
+        margin-bottom: 35px;
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+        .about__description-background-desktop {
+            background-image: url('/images/about-background-1280@2x.png');
+        }
+    }
+
+    .about__list {
+        margin: 0 auto;
+        width: 1050px;
+        justify-content: space-between;
+    }
+
+    .about__list-item {
+        width: 330px;
+    }
+
+    .about__icon {
+        margin-bottom: 40px;
+    }
+
+    .about__value {
+        font-size: 58px;
+        line-height: 66px;
+    }
+
+    .about__value-description {
+        font-size: 16px;
+        line-height: 176%;
+        margin: 15px 0 0;
+        max-width: 330px;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+
+    .about__description-background-desktop {
+        background-size: cover;
+    }
+}

@@ -1,0 +1,92 @@
+.modal {
+    background-color: #E17992;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:250px;
+    height: 100%;
+    transition: transform 500ms;
+    z-index: 10;
+}
+
+.is-hidden {
+    transform: translateX(-100%);
+    // opacity: 0;
+    // visibility: none;
+    pointer-events: none;
+}
+
+.modal__close {
+    position: absolute;
+    top:23px;
+    right:34px;
+    cursor: pointer;
+}
+
+.modal__btn {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border-style: none;
+    padding: 19px 43px 17px 43px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    width: 184px;
+    height: 44px;
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #D41443;    
+}
+
+.modal__btn:hover {
+    background-color: #ECEBEB;
+}
+
+.modal__btn--arrow {
+    margin-left: 20px;
+}
+
+.modal__navigation {
+  margin-top: 19px;
+
+  &:last-child {
+    border-bottom:1px solid #E18298;
+  }
+}
+
+.modal__item {
+  border-top:1px solid #E18298;
+}
+
+.modal__link {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none; //do połączenia ze stylami w _common
+    color: #FFFFFF;
+    margin: 13px 0px 11px 24px;
+ 
+    &:hover,
+    &:active {
+     color: #D41443;
+    }
+ }
+
+@media screen and (min-width:768px) {
+    .modal {
+        width:254px;
+    }
+}
